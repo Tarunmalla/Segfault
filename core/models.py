@@ -21,7 +21,7 @@ class Room(models.Model):
     created=models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering=['updated','created']
+        ordering=['-updated','-created']
 
     
     def __str__(self):
@@ -39,3 +39,6 @@ class Message(models.Model):
 
     def __str__(self):
         return self.body[0:50]
+    
+    class Meta:
+        ordering=['-updated','-created']

@@ -8,7 +8,6 @@ study together.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 In this project, One can join in any channel by creating an account in this and can answer anyone's queries and they can also post their doubts.

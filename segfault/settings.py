@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-bin8l5$0*71rtexts2=8gdt*cuk9t)6n&@kd2ym&g80n13%t&$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'rest_framework',
 ]
+
+AUTH_USER_MODEL='core.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -120,10 +122,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = 'images/'
 
 STATICFILES_DIRS=[
     BASE_DIR/'static'
 ]
+
+MEDIA_ROOT= BASE_DIR/ 'static/images'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
